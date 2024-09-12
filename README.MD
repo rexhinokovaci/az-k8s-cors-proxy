@@ -128,7 +128,7 @@ k6 run loadtest/loadtest.js
 The script simulates HTTP requests to test the CORS proxy service's scalability.
 
 # Limitations:
-The service handled up to 592 requests per second, which is slightly below the target of 1000 requests per second. Additional tuning or scaling might be needed to meet this target consistently.
+The service handled up to Requests per Second (RPS): 701.56. which is slightly below the target of 1000 requests per second. Additional tuning or scaling might be needed to meet this target consistently.
 
 
 
