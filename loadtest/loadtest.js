@@ -10,7 +10,9 @@ export const options = {
 };
 
 export default function () {
+   //external ip of the service
   const url = 'http://52.226.155.13/';
+ 
   const response = http.get(url);
 
   check(response, {
