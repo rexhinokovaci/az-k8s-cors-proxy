@@ -1,31 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cors-proxy
+  name: cors-anywhere
+  namespace: default
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: cors-proxy
+      app: cors-anywhere
   template:
     metadata:
       labels:
-        app: cors-proxy
+        app: cors-anywhere
     spec:
       containers:
       - name: cors-proxy
         image: redocly/cors-anywhere
         ports:
         - containerPort: 8080
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: cors-proxy-service
-spec:
-  type: LoadBalancer
-  ports:
-    - port: 80
-      targetPort: 8080
-  selector:
-    app: cors-proxy
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
