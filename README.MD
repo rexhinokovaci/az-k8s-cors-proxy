@@ -13,7 +13,7 @@ Azure-K8s-CORS-Proxy/
 │   ├── variables.tf
 │   ├── outputs.tf
 │   └── provider.tf
-├── kubernetes/
+├── k8s/
 │   └── cors-proxy.yaml
 ├── loadtest/
 │   └── loadtest.js
