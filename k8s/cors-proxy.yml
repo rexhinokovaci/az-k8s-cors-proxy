@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cors-proxy
-        image: robcherry/cors-anywhere
+        image: redocly/cors-anywhere
         ports:
         - containerPort: 8080
 ---
