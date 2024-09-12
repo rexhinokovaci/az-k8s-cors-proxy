@@ -101,3 +101,5 @@ The service handled up to 592 requests per second, which is slightly below the t
 
 
 All source code and configuration files used in this challenge are included in this repository written and destroyed/fixed by @rexhinokovaci.
+![alt text](image.png)
+![alt text](image-1.png)
