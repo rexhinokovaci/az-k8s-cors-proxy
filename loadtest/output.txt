@@ -1,1 +1,0 @@
-/home/rexhinokovaci/temp/az-k8s-cors-proxy/loadtest/output-1000-rps.zip
